@@ -1,0 +1,18 @@
+//val
+val TH = <minecraft:skull:3>.withTag({HideFlags: 3, SkullOwner: {Id: "0298dc75-39d0-417b-9e8b-d59e9f52abdc", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY4NjAxZWIwMTZjMWM3N2NlOTc5ZDgwMDY0ZjYyZjkxYTRmNzY5YTNkZDU0NmM2MDk2NjgwZjcwNDIxODIzZCJ9fX0="}]}}, display: {Lore: ["§7Defence: §a+20", "§7Heath: §a+20", "§7Speed: §c-50%", "", "§7Strength and defense are increased, but speed is halved.", "§6§lLEGENDARY HELMET"], Name: "§6§lTungsten Helmet"}, AttributeModifiers: [{UUIDMost: 3395628722084594407 as long, UUIDLeast: -8546289880458805204 as long, Amount: 20.0, Slot: "head", AttributeName: "generic.armorToughness", Operation: 0, Name: "generic.armorToughness"}, {UUIDMost: -1782912870721237180 as long, UUIDLeast: -6883635111429010436 as long, Amount: 20.0, Slot: "head", AttributeName: "generic.armor", Operation: 0, Name: "generic.armor"}, {UUIDMost: -3629898673233704691 as long, UUIDLeast: -5019590052578202965 as long, Amount: 20.0, Slot: "head", AttributeName: "generic.maxHealth", Operation: 0, Name: "generic.maxHealth"}, {UUIDMost: -7637987100936093568 as long, UUIDLeast: -8346582090500807905 as long, Amount: -0.5, Slot: "head", AttributeName: "generic.movementSpeed", Operation: 1, Name: "generic.movementSpeed"}]});
+
+val TF = <minecraft:skull:3>.withTag({SkullOwner: {Id: "eac8cdbd-b662-417e-8a87-64cad4763e21", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjcwNzJlZjU3NTQyNDcxMTU2YjM1ZDIyMTU4OTVjMGVjMTVmN2RiZmNlNmU5MDhjMjA0ODc1YzUwM2QxMGE5MyJ9fX0="}]}}, display: {Lore: ["§7Collect 64 of them and throw them into ", "§7the water to create tungsten armor.", "§5§lEPIC"], Name: "§5§lTungsten Fragment"}});
+
+val HF = <minecraft:skull:3>.withTag({SkullOwner: {Id: "7e6b8ec0-0f5b-49b4-a27f-57d7bcfccce3", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmIzOWMwZTUzZTc5ZTdlYmQ0ZGI2YzZkMDk2YzlkOWExNjBjZmYyNzgyMmMwNzdmYjhmNWQ0NTk2OWNjNDk3MiJ9fX0="}]}}, display: {Lore: ["§7This is the material used to create Evil Hyperion.", "§7These are the materials that come from the root table.", "§7collect 64 of them and throw the Enchanted Hyperion", "§7into the Liquid Matter to create the Evil Hyperion.", "", "§d§lMYSTIC"], Name: "§l§d§lHyperion Fragment"}});
+
+//recipe
+mods.inworldcrafting.FluidToItem.transform(<astralsorcery:blockcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}, collectorType: 0}}), <liquid:astralsorcery.liquidstarlight>, [<arcanearchives:monitoring_crystal>*4,<astralsorcery:itemcraftingcomponent>*16],true);
+
+mods.inworldcrafting.FluidToItem.transform(TH, <liquid:water>, [TF*64],true);
+
+mods.inworldcrafting.FluidToItem.transform(<astralsorcery:itemcraftingcomponent>*2, <liquid:water>, [<arcanearchives:radiant_dust>]);
+
+mods.inworldcrafting.FluidToItem.transform(<thaumcraft:salis_mundus>*2, <liquid:water>, [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})]);
+
+mods.inworldcrafting.FluidToItem.transform(<mythologytweaks:evil_hyperion>, <liquid:ic2uu_matter>, [<mythologytweaks:enchanted_hyperion>,HF*64],true);
+

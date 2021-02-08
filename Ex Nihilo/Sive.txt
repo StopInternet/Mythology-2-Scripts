@@ -1,0 +1,7 @@
+//Import
+import mods.exnihilocreatio.Sieve;
+
+//example
+//Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+
+Sieve.addStringMeshRecipe(<minecraft:gravel>, <forbidden_arcanus:arcane_crystal>, 1.2);

@@ -9,8 +9,6 @@
 recipes.remove(<eplus:advanced_table>);
 recipes.remove(<minecraft:enchanting_table>);
 recipes.remove(<draconicevolution:energy_infuser>);
-recipes.remove(<cyclicmagic:block_enchanter>);
-recipes.remove(<cyclicmagic:block_anvil>);
 recipes.remove(<openblocks:auto_enchantment_table>);
 recipes.remove(<chickenchunks:chunk_loader>);
 

@@ -1,0 +1,13 @@
+#loader contenttweaker
+
+val soulbreaker = mods.contenttweaker.enchantments.EnchantmentBuilder.create("soulbreaker"); 
+soulbreaker.name = "Soul Breaker"; 
+soulbreaker.allowedOnBooks = false; 
+soulbreaker.applicableSlots = [mainHand]; 
+soulbreaker.setTypeWeapon(); 
+soulbreaker.setRarityVeryRare();
+soulbreaker.maxLevel = 5; 
+soulbreaker.calcDamageByCreature = function(thisEnch, level, damageSource) 
+    {
+	return 5.00f * level;
+}; soulbreaker.register();
