@@ -5,6 +5,7 @@ val TF = <minecraft:skull:3>.withTag({SkullOwner: {Id: "eac8cdbd-b662-417e-8a87-
 
 val HF = <minecraft:skull:3>.withTag({SkullOwner: {Id: "7e6b8ec0-0f5b-49b4-a27f-57d7bcfccce3", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmIzOWMwZTUzZTc5ZTdlYmQ0ZGI2YzZkMDk2YzlkOWExNjBjZmYyNzgyMmMwNzdmYjhmNWQ0NTk2OWNjNDk3MiJ9fX0="}]}}, display: {Lore: ["§7This is the material used to create Evil Hyperion.", "§7These are the materials that come from the root table.", "§7collect 64 of them and throw the Enchanted Hyperion", "§7into the Liquid Matter to create the Evil Hyperion.", "", "§d§lMYSTIC"], Name: "§l§d§lHyperion Fragment"}});
 
+val QZ = <minecraft:skull:3>.withTag({SkullOwner: {Id: "5348b802-10f5-43bb-a82e-92ad1a3e51a0", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGUxNTBhYjdjMDE4NDZmNDgwODk3ZmJkMzVmMDUyNWNhZWI1MmFhNjI0Zjk2NzAwOTVmMzk2MTA1ODkzZGFjYiJ9fX0="}]}}, display: {Name: "§f§lQuartz Silver"}});
 //recipe
 mods.inworldcrafting.FluidToItem.transform(<astralsorcery:blockcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}, collectorType: 0}}), <liquid:astralsorcery.liquidstarlight>, [<arcanearchives:monitoring_crystal>*4,<astralsorcery:itemcraftingcomponent>*16],true);
 
@@ -14,5 +15,5 @@ mods.inworldcrafting.FluidToItem.transform(<astralsorcery:itemcraftingcomponent>
 
 mods.inworldcrafting.FluidToItem.transform(<thaumcraft:salis_mundus>*2, <liquid:water>, [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})]);
 
-mods.inworldcrafting.FluidToItem.transform(<mythologytweaks:evil_hyperion>, <liquid:ic2uu_matter>, [<mythologytweaks:enchanted_hyperion>,HF*64],true);
+mods.inworldcrafting.FluidToItem.transform(QZ, <liquid:water>, [<minecraft:quartz>*4]);
 

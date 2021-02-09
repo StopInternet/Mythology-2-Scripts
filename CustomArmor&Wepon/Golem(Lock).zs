@@ -30,4 +30,6 @@ RecipeBuilder.get("engineer")
   .addOutput(<minecraft:iron_boots>.withTag({RepairCost: 10000, Unbreakable: 1 as byte, HideFlags: 6, display: {Lore: ["§7Health: §a+20", "§7Defence: §a+30", "§7Speed: §a-20%", "", "§5§lEPIC BOOTS"], Name: "§5§lGolem Boots"}, AttributeModifiers: [{UUIDMost: -5085986988399638898 as long, UUIDLeast: -5825239679940796694 as long, Amount: -0.2, Slot: "feet", AttributeName: "generic.movementSpeed", Operation: 1, Name: "generic.movementSpeed"}, {UUIDMost: 2012278883696397756 as long, UUIDLeast: -9211902760022718023 as long, Amount: 30.0, Slot: "feet", AttributeName: "generic.armor", Operation: 0, Name: "generic.armor"}, {UUIDMost: -7847874533324076773 as long, UUIDLeast: -8003000617493626325 as long, Amount: 20.0, Slot: "feet", AttributeName: "generic.maxHealth", Operation: 0, Name: "generic.maxHealth"}]}))
   .create();
 
-  
+  val GG = <entity:minecraft:villager_golem>;
+
+GG.addPlayerOnlyDrop(<minecraft:iron_block>.withTag({ench: [{lvl: 1 as short, id: 40 as short}], HideFlags: 7, display: {Lore: ["§8x5184", "§b§lGRAND ITEM "], Name: "§6§lTriple Compressed Iron Block"}, AttributeModifiers: [{UUIDMost: 9033607389828828571 as long, UUIDLeast: -9183079714921211158 as long, Amount: 0.0, AttributeName: "generic.armor", Operation: 0, Name: "generic.armor"}, {UUIDMost: -3204576415064438102 as long, UUIDLeast: -5162092855632919334 as long, Amount: 0.0, AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]}) % 10,1,1);

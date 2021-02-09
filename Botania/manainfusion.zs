@@ -45,3 +45,5 @@ mods.botania.ManaInfusion.addInfusion(<thaumcraft:crystal_essence>.withTag({Aspe
 mods.botania.ManaInfusion.addInfusion(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})*4,<thaumcraft:crystal_perditio>, 1000);
 
 mods.botania.ManaInfusion.addInfusion(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]})*4,<thaumcraft:crystal_vitium>, 1000);
+
+mods.botania.ManaInfusion.addInfusion(<minecraft:skull:3>.withTag({SkullOwner: {Id: "5348b802-10f5-43bb-a82e-92ad1a3e51a0", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGUxNTBhYjdjMDE4NDZmNDgwODk3ZmJkMzVmMDUyNWNhZWI1MmFhNjI0Zjk2NzAwOTVmMzk2MTA1ODkzZGFjYiJ9fX0="}]}}, display: {Name: "§f§lQuartz Silver"}}), <minecraft:quartz>*4, 1000);
