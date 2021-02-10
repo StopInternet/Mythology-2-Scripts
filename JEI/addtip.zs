@@ -2,6 +2,8 @@
 //mods.jei.JEI.addItem();
 //mods.jei.JEI.hide();
 
+mods.jei.JEI.addItem(<minecraft:skull:3>.withTag({HideFlags: 2, SkullOwner: {Id: "3201cecc-4532-4f22-a0b1-dc4db5d8c644", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNhMGI4NmI2Mzc0OTFmNDhlNzgzMzU3OGE3Y2VhZjRlOWYzZDhlNmEwZGU2ZGJhM2RiZjNhMzU0OTU5MGNjNiJ9fX0="}]}}, display: {Lore: ["§7The Legendary Chalice Packed with Gaia's Soul.", "§7It is used to evolve Gaia.", "§d§lMYSTERY ITEM"], Name: "§d§lThe Chalice of Gaia"}, AttributeModifiers: [{UUIDMost: -8978831682974757808 as long, UUIDLeast: -7266357968164722679 as long, Amount: 0.0, AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]}));
+
 mods.jei.JEI.addItem(<minecraft:skull:3>.withTag({SkullOwner: {Id: "eac8cdbd-b662-417e-8a87-64cad4763e21", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjcwNzJlZjU3NTQyNDcxMTU2YjM1ZDIyMTU4OTVjMGVjMTVmN2RiZmNlNmU5MDhjMjA0ODc1YzUwM2QxMGE5MyJ9fX0="}]}}, display: {Lore: ["§7Collect 64 of them and throw them into ", "§7the water to create tungsten armor.", "§5§lEPIC"], Name: "§5§lTungsten Fragment"}}));
 
 mods.jei.JEI.addItem(<minecraft:furnace>.withTag({ench: [{lvl: 2 as short, id: 20}], RepairCost: 1, HideFlags: 1, display: {Lore: ["§9§lFire Aspect II", "", "§9§lRARE ITEM"], Name: "§9§lHot Furnace"}}));

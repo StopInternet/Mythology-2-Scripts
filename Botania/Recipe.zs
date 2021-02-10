@@ -6,6 +6,12 @@ recipes.remove(<botania:terraplate>);
 recipes.remove(<botania:pylon:1>);
 recipes.remove(<botania:pylon>);
 recipes.remove(<botania:alfheimportal>);
+recipes.remove(<botania:pylon:2>);
+recipes.remove(<extrabotany:natureorb>);
+recipes.remove(<extrabotany:material:6>);
+recipes.remove(<extrabotany:pedestal>);
+
+//rename
 
 // Petal Apothecary
 recipes.remove(<botania:altar:0>);

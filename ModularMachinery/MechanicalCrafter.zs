@@ -65,3 +65,12 @@ mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "HYPERION", m1, 100)
       .addItemOutput(<mythologytweaks:enchanted_hyperion>)
       . addEnergyPerTickInput(1800)
       .build();
+
+//StarSteel
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "STARSTEEL", m1, 100)
+      .addItemInput(<astralsorcery:itemcraftingcomponent:4>*32)
+      .addItemInput(<astralsorcery:itemcraftingcomponent:1>*32)
+      .addItemInput(<thermalfoundation:material:160>*32)
+      .addItemOutput(<mythologytweaks:star_steel_ingot>)
+      . addEnergyPerTickInput(2125)
+      .build();
