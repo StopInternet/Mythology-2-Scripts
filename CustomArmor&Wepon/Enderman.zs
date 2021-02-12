@@ -21,8 +21,6 @@ val Jump3 = <potion:minecraft:jump_boost>.makePotionEffect(500, 2);
 
 
 Ender1.addPlayerOnlyDrop(EF1 % 10,1,1);
-Ender1.addDrop(<minecraft:end_crystal> % 10,1,1);
-
 val EnKA_Set = mods.SetEffect.newSet()
                                  .setName("EnKA")
                                  .withHead(EnHe)

@@ -74,3 +74,11 @@ mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "STARSTEEL", m1, 100)
       .addItemOutput(<mythologytweaks:star_steel_ingot>)
       . addEnergyPerTickInput(2125)
       .build();
+
+//Titanium
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "TITANIUM", m1, 100)
+      .addItemInput(<appliedenergistics2:sky_stone_block>)
+      .addItemOutput(<libvulpes:ore0:8>)
+      .setChance(25)
+      .addEnergyPerTickInput(3000)
+      .build();

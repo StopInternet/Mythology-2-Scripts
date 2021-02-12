@@ -10,7 +10,11 @@ recipes.remove(<botania:pylon:2>);
 recipes.remove(<extrabotany:natureorb>);
 recipes.remove(<extrabotany:material:6>);
 recipes.remove(<extrabotany:pedestal>);
-
+recipes.remove(<enderio:item_travel_staff>);
+recipes.remove(<enderio:item_dark_steel_sword>);
+recipes.remove(<actuallyadditions:item_tele_staff>);
+recipes.remove(<notenoughwands:teleportation_wand>);
+recipes.remove(<projecte:item.pe_philosophers_stone>);
 //rename
 
 // Petal Apothecary

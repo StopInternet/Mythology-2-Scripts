@@ -48,4 +48,22 @@ mods.botania.ManaInfusion.addInfusion(<thaumcraft:crystal_essence>.withTag({Aspe
 
 mods.botania.ManaInfusion.addInfusion(<thaumcraft:quicksilver>*4, <minecraft:skull:3>.withTag({SkullOwner: {Id: "5348b802-10f5-43bb-a82e-92ad1a3e51a0", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGUxNTBhYjdjMDE4NDZmNDgwODk3ZmJkMzVmMDUyNWNhZWI1MmFhNjI0Zjk2NzAwOTVmMzk2MTA1ODkzZGFjYiJ9fX0="}]}}, display: {Name: "§f§lQuartz Silver"}}), 1000);
 
-mods.botania.RuneAltar.addRecipe(<minecraft:planks>,[<minecraft:grass>, <minecraft:dirt>], 200);
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:runeofthe_lie>,[<mythologytweaks:ultimate_gaia_spirit>,<botania:rune:9>,<botania:rune:10>,<botania:rune:11>,<botania:rune:12>,<botania:rune:13>,<botania:rune:14>,<botania:rune:15>], 1000000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:runeofthe_truth>,[<mythologytweaks:ultimate_gaia_spirit>,<botania:rune>,<botania:rune:1>,<botania:rune:2>,<botania:rune:3>,<botania:rune:4>,<botania:rune:5>,<botania:rune:6>,<botania:rune:7>,<botania:rune:8>], 1000000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:runeofthe_iron>,[<minecraft:iron_block>,<libvulpes:productingot:7>,<libvulpes:productingot:7>,<libvulpes:productingot:7>,<libvulpes:productingot:7>,<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>], 50000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:runeofthe_redstone>,[<enderio:block_alloy:3>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<minecraft:redstone_block>,<minecraft:redstone_block>,<minecraft:redstone_block>,<minecraft:redstone_block>], 50000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:runeofthe_green>,[<mythologytweaks:runeofthe_redstone>,<mythologytweaks:runeofthe_iron>,<actuallyadditions:block_crystal_empowered:4>,<actuallyadditions:block_crystal_empowered:4>,<actuallyadditions:block_crystal_empowered:4>,<actuallyadditions:block_crystal_empowered:4>,<botania:storage:1>,<botania:storage:1>,<botania:storage:1>,<botania:storage:1>], 100000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:runeofthe_perfect>,[<mythologytweaks:runeofthe_lie>,<mythologytweaks:runeofthe_green>,<mythologytweaks:runeofthe_truth>,<avaritiatweaks:gaia_block>], 100000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:infinity_stone_3>,[<extrautils2:decorativesolid:8>,<mythologytweaks:runeofthe_perfect>,<extrabotany:material:1>,<extrabotany:material:1>,<extrabotany:material:1>,<extrabotany:material:1>,<mythologytweaks:ultimate_gaia_spirit>,<mythologytweaks:ultimate_gaia_spirit>,<mythologytweaks:ultimate_gaia_spirit>,<mythologytweaks:ultimate_gaia_spirit>,<extrabotany:material:5>,<extrabotany:material:5>,<extrabotany:material:8>,<extrabotany:material:8>], 100000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:sun_essence>,[<advanced_solar_panels:crafting:5>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>], 50000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:moon_essence>,[<extrautils2:ingredients:5>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>], 50000);
+
+mods.botania.RuneAltar.addRecipe(<mythologytweaks:temperio_essence>,[<mysticalagradditions:insanium>,<mysticalagradditions:insanium>,<mythologytweaks:moon_essence>,<mythologytweaks:moon_essence>,<mythologytweaks:sun_essence>,<mythologytweaks:sun_essence>], 50000);
