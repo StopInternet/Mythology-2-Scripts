@@ -6,58 +6,6 @@ import crafttweaker.item.IIngredient;
 //val
 var m1 = "mechanical_crafter";
 
-val sf = <minecraft:skull:3>.withTag({SkullOwner: {Id: "7c3c5222-2aca-47c0-a1fc-493fec60f166", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY4OWIxNTBiZTljNGM1MjQ5ZjM1NWY2OGVhMGM0MzkxMzAwYTliZTFmMjYwZDc1MGZjMzVhMTgxN2FkNzk2ZSJ9fX0="}]}}, display: {Lore: ["§7Ender Dragon Drop (§a10%§7)", "", "§6§lLEGENDARY ITEM"], Name: "§6§lSuperior Dragon Fragment"}});
-
-val crp = <minecraft:porkchop>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], RepairCost: 1, HideFlags: 3, display: {Lore: ["§7Material Item", "§5§lEPIC ITEM"], Name: "§5§lCompressed Raw Porkchop"}});
-
-val dcrp = <minecraft:cooked_porkchop>.withTag({ench: [{lvl: 4 as short, id: 26 as short}], RepairCost: 1, HideFlags: 3, display: {Lore: ["§7Material Item", "§6§lLEGENDARY IITEM"], Name: "§6§lEnchanted Cooked Porkchop"}});
-
-val se = <minecraft:spider_eye>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], RepairCost: 1, HideFlags: 3, display: {Name: "§5§lCompressed Spider Eye"}});
-
-val dse = <minecraft:fermented_spider_eye>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], RepairCost: 1, HideFlags: 3, display: {Lore: ["§7Material Item", "§6§lLEGENDARY ITEM"], Name: "§6§lEnchanted Fermented Spider Eye"}});
-
-val st = <minecraft:string>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], RepairCost: 1, HideFlags: 3, display: {Lore: ["§7Material Item", "§5§lEPIC ITEM"], Name: "§5§lCompressed String"}});
-
-val dst = <minecraft:wool>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], HideFlags: 1, display: {Lore: ["§7Material Item", "§6§lLEGENDARY ITEM"], Name: "§6§lEnchanted White Wool"}});
-
-val em = <minecraft:emerald>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], RepairCost: 1, HideFlags: 3, display: {Lore: ["§7Material Item", "§5§lEPIC ITEM"], Name: "§5§lCompressed Emerald"}});
-
-val dem = <minecraft:emerald_block>.withTag({ench: [{lvl: 1 as short, id: 31 as short}], RepairCost: 1, HideFlags: 3, display: {Lore: ["§7Material Item", "§6§lLEGENDARY ITEM"], Name: "§6§lEnchanted Emerald Block"}});
-
-val di = <mythologytweaks:infuseddiamond>.withTag({display: {Lore: ["§7Material Item", "§5§lEPIC ITEM"], Name: "§5§lEnchanted Diamond"}});
-
-val ddi = <minecraft:diamond_block>.withTag({ench: [{lvl: 1 as short, id: 31 as short}], RepairCost: 1, HideFlags: 3, display: {Lore: ["§7Material Item", "§6§lLEGENDARY ITEM"], Name: "§6§lEnchanted Diamond Block"}});
-
-val ir = <mythologytweaks:infusedironingot>.withTag({display: {Lore: ["§7Material Item", "§5§lEPIC ITEM"], Name: "§5§lEnchanted Iron Ingot"}});
-
-val dir = <minecraft:iron_block>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], HideFlags: 1, display: {Lore: ["§7Material Item", "§6§lLEGENDARY ITEM"], Name: "§6§lEnchanted Iron Block"}});
-
-val gi = <mythologytweaks:infused_gold_ingot>.withTag({display: {Lore: ["§7Material Item", "§5§lEPIC ITEM"], Name: "§5§lEnchanted Gold Ingot"}});
-
-val dgi = <minecraft:gold_block>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], HideFlags: 1, display: {Lore: ["§7Material Item", "§6§lLEGENDARY ITEM"], Name: "§6§lEnchanted Golden Block"}});
-
-val en = <mythologytweaks:infused_ender_pearl>.withTag({display: {Lore: ["§7Material Item ", "§5§lEPIC ITEM"], Name: "§5§lEnchanted Ender Pearl"}});
-
-val den = <minecraft:ender_eye>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], HideFlags: 1, display: {Lore: ["§7Material Item", "§6§lLEGENDARY ITEM"], Name: "§6§lEnchanted Ender Eye"}});
-
-val midas = <minecraft:golden_sword>.withTag({flag: 1 as byte, HideFlags: 2, display: {Lore: ["§7Damage: §a+77", "§7Atack Speed: §a+5", "", "§6§lLEGENDARY SWORD"], Name: "§6§lMidas Sword"}, AttributeModifiers: [{UUIDMost: -5272764820730524428 as long, UUIDLeast: -6052951832517249818 as long, Amount: 5.0, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "generic.attackSpeed"}, {UUIDMost: 8011136340986774725 as long, UUIDLeast: -8309547102847482282 as long, Amount: 77.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]});
-
-val lp = <minecraft:golden_sword>.withTag({HideFlags: 2, display: {Lore: ["§7Damage: §a+44", "§7Attack Speed: §a+5", "", "§5§lEPIC SWORD"], Name: "§5§lLeaping Sword"}, AttributeModifiers: [{UUIDMost: -3405452216694718091 as long, UUIDLeast: -5268482464839505365 as long, Amount: 44.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}, {UUIDMost: -1012149679954966885 as long, UUIDLeast: -7660476510049079771 as long, Amount: 5.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]});
-
-val ps  = <minecraft:golden_sword>.withTag({ench: [{lvl: 1 as short, id: 16 as short}], Unbreakable: 1, HideFlags: 7, display: {Lore: ["§7Damage: §a+50", "§7Attack Speed: §a+5", "§7Luck: §a+10", "", "§6§lLEGENDARY SWORD"], Name: "§6§lPigman Sword "}, AttributeModifiers: [{UUIDMost: -83065624075548527 as long, UUIDLeast: -8486838892192309746 as long, Amount: 50.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}, {UUIDMost: -8872077108636071935 as long, UUIDLeast: -5900329033829200051 as long, Amount: 10.0, Slot: "mainhand", AttributeName: "generic.luck", Operation: 0, Name: "generic.luck"}, {UUIDMost: -8298194223063939057 as long, UUIDLeast: -6309161927480303156 as long, Amount: 5.0, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "generic.attackSpeed"}]});
-
-val ats = <minecraft:diamond_sword>.withTag({flag: 0 as byte, HideFlags: 7, display: {Lore: ["§7Damage: §a+70", "§7Attack Speed: §a+5", "§7Luck: §a+15", "§7Speed: §a+6", "", "§6§lLEGENDARY SWORD"], Name: "§6§lAspect of the Dragons"}, AttributeModifiers: [{UUIDMost: -3633255805183307875 as long, UUIDLeast: -5596122395124036898 as long, Amount: 70.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}, {UUIDMost: 325661388423121219 as long, UUIDLeast: -7383344912661919040 as long, Amount: 5.0, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "generic.attackSpeed"}, {UUIDMost: -6740649881706542683 as long, UUIDLeast: -7748191167353537336 as long, Amount: 15.0, Slot: "mainhand", AttributeName: "generic.luck", Operation: 0, Name: "generic.luck"}, {UUIDMost: -4093648387938303874 as long, UUIDLeast: -5200751299185848943 as long, Amount: 0.06, Slot: "mainhand", AttributeName: "generic.movementSpeed", Operation: 0, Name: "generic.movementSpeed"}]});
-
-val Wb = <minecraft:bone>.withTag({ench: [{lvl: 1 as short, id: 33 as short}], RepairCost: 1, HideFlags: 1, display: {Lore: ["§7Wolf Drop (§a20%§7)", "", "§9§lRARE ITEM"], Name: "§9§lWolf Bone"}});
-
-val darkwolf = <minecraft:skull:3>.withTag({HideFlags: 2, SkullOwner: {Id: "736e9be2-4984-4cbc-bbb6-9ab419bb55bc", Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgzYTJhYTlkMzczNGI5MTlhYzI0Yzk2NTllNWUwZjg2ZWNhZmJmNjRkNDc4OGNmYTQzM2JiZWMxODllOCJ9fX0="}]}}, display: {Lore: ["§7Defence: §a+20", "§7Speed: §a+50 §c§l(MAX)", "", "§6§lLEGENDARY HELMET"], Name: "§6§lDark Wolf Helmet"}, AttributeModifiers: [{UUIDMost: 4560933902984957093 as long, UUIDLeast: -4667392486935122155 as long, Amount: 20.0, Slot: "head", AttributeName: "generic.armor", Operation: 0, Name: "generic.armor"}, {UUIDMost: 116862330301532539 as long, UUIDLeast: -6701982174304106779 as long, Amount: 20.0, Slot: "head", AttributeName: "generic.armorToughness", Operation: 0, Name: "generic.armorToughness"}, {UUIDMost: 4826735037323430147 as long, UUIDLeast: -7131851762978973956 as long, Amount: 0.5, Slot: "head", AttributeName: "generic.movementSpeed", Operation: 0, Name: "generic.movementSpeed"}]});
-
-val woth = <minecraft:iron_nugget>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], HideFlags: 1, display: {Lore: ["§7Material Item", "§5§lEPIC ITEM"], Name: "§5§lWolf Tooth"}});
-
-val gwoth = <minecraft:gold_nugget>.withTag({ench: [{lvl: 1 as short, id: 38 as short}], HideFlags: 1, display: {Lore: ["§7Material Item", "§6§lLEGENDARY ITEM"], Name: "§6§lGolden Tooth"}});
-
-
-
 //Hyperion
 mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "HYPERION", m1, 100)
       .addItemInput(<mythologytweaks:hyperion>)
@@ -81,4 +29,205 @@ mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "TITANIUM", m1, 100)
       .addItemOutput(<libvulpes:ore0:8>)
       .setChance(25)
       .addEnergyPerTickInput(3000)
+      .build();
+
+//FeiniumIngot
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "FEINIUM", m1, 75)
+      .addItemInput(<astralsorcery:itemcraftingcomponent:2>*64)
+      .addItemInput(<bigreactors:ingotblutonium>*64)
+      .addItemOutput(<mythologytweaks:feinium_ingot>)
+      . addEnergyPerTickInput(3125)
+      .build();
+
+//GEniumIngot
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "GERIT", m1, 50)
+      .addItemInput(<thermalfoundation:material:167>)
+      .addItemInput(<thermalfoundation:material:1025>*4)
+      .addItemOutput(<mythologytweaks:gelid_enderium_ingot>)
+      . addEnergyPerTickInput(1502)
+      .build();
+
+//GEniumIngotDUST
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "GEDUST", m1, 50)
+      .addItemInput(<redstonearsenal:material>)
+      .addItemInput(<mythologytweaks:gelid_enderium_nugget>*16)
+      .addItemOutput(<mythologytweaks:gelid_enderium_dust>)
+      . addEnergyPerTickInput(2002)
+      .build();
+
+//GEniumIngotGEM
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "GEGEM", m1, 50)
+      .addItemInput(<redstonearsenal:material:160>)
+      .addItemInput(<mythologytweaks:gelid_enderium_dust>*8)
+      .addItemOutput(<mythologytweaks:gelid_enderium_gem>)
+      . addEnergyPerTickInput(4234)
+      .build();
+
+//VIBRANT
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "VIBRANT", m1, 50)
+      .addItemInput(<enderio:block_alloy:2>*56)
+      .addItemOutput(<mythologytweaks:enchanted_vibrant_ingot>*3)
+      . addEnergyPerTickInput(5624)
+      .build();
+
+//VIBV
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "VIV", m1, 50)
+      .addItemInput(<tconstruct:ingots:2>)
+      .addItemInput(<embers:ingot_dawnstone>)
+      .addItemOutput(<mythologytweaks:vermilion_ingot>)
+      . addEnergyPerTickInput(2500)
+      .build();
+
+
+//FSING
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "FSING", m1, 55)
+      .addItemInput(<mythologytweaks:feinium_ingot>)
+      .addItemInput(<enderio:item_alloy_ingot:6>*4)
+      .addItemOutput(<mythologytweaks:feinium_steel_ingot>)
+      . addEnergyPerTickInput(2505)
+      .build();
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AECI", m1, 55)
+      .addItemInput(<enderio:item_material:5>)
+      .addItemOutput(<appliedenergistics2:material:20>)
+      . addEnergyPerTickInput(1235)
+      .build();
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AECII", m1, 55)
+      .addItemInput(<minecraft:diamond>)
+      .addItemOutput(<appliedenergistics2:material:17>)
+      . addEnergyPerTickInput(1235)
+      .build();
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AECIII", m1, 55)
+      .addItemInput(<appliedenergistics2:material:10>)
+      .addItemOutput(<appliedenergistics2:material:16>)
+      . addEnergyPerTickInput(1235)
+      .build();
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AECIV", m1, 55)
+      .addItemInput(<minecraft:gold_ingot>)
+      .addItemOutput(<appliedenergistics2:material:18>)
+      . addEnergyPerTickInput(1235)
+      .build();
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "SAECV", m1, 55)
+      .addItemInput(<appliedenergistics2:material:17>)
+      .addItemInput(<minecraft:redstone>)
+      .addItemInput(<appliedenergistics2:material:20>)
+      .addItemOutput(<appliedenergistics2:material:24>)
+      . addEnergyPerTickInput(2235)
+      .build();
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "SAECVI", m1, 55)
+      .addItemInput(<appliedenergistics2:material:16>)
+      .addItemInput(<minecraft:redstone>)
+      .addItemInput(<appliedenergistics2:material:20>)
+      .addItemOutput(<appliedenergistics2:material:23>)
+      . addEnergyPerTickInput(2235)
+      .build();
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "SAECVII", m1, 55)
+      .addItemInput(<appliedenergistics2:material:18>)
+      .addItemInput(<minecraft:redstone>)
+      .addItemInput(<appliedenergistics2:material:20>)
+      .addItemOutput(<appliedenergistics2:material:22>)
+      . addEnergyPerTickInput(2235)
+      .build();
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AECFI", m1, 55)
+      .addItemInput(<appliedenergistics2:material:24>)
+      .addItemInput(<appliedenergistics2:material:23>)
+      .addItemInput(<actuallyadditions:item_crystal_empowered:1>)
+      .addItemOutput(<mythologytweaks:circuit_3>)
+      . addEnergyPerTickInput(3235)
+      .build();
+
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AECGI", m1, 55)
+      .addItemInput(<appliedenergistics2:material:24>)
+      .addItemInput(<appliedenergistics2:material:23>)
+      .addItemInput(<actuallyadditions:item_crystal_empowered:2>)
+      .addItemOutput(<mythologytweaks:circuit_2>)
+      . addEnergyPerTickInput(3235)
+      .build();
+
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AECGGHI", m1, 55)
+      .addItemInput(<appliedenergistics2:material:22>)
+      .addItemInput(<appliedenergistics2:material:24>)
+      .addItemInput(<actuallyadditions:item_crystal_empowered>)
+      .addItemOutput(<mythologytweaks:circuit_5>)
+      . addEnergyPerTickInput(3235)
+      .build();
+
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AHHECI", m1, 55)
+      .addItemInput(<mythologytweaks:circuit_3>)
+      .addItemInput(<mythologytweaks:circuit_2>)
+      .addItemInput(<actuallyadditions:item_crystal_empowered:5>)
+      .addItemOutput(<mythologytweaks:circuit_1>)
+      . addEnergyPerTickInput(4235)
+      .build();
+
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AEGHASI", m1, 55)
+      .addItemInput(<mythologytweaks:circuit_5>)
+      .addItemInput(<mythologytweaks:circuit_3>)
+      .addItemInput(<actuallyadditions:item_crystal_empowered:3>)
+      .addItemOutput(<mythologytweaks:circuit_6>)
+      . addEnergyPerTickInput(4235)
+      .build();
+
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AHGECI", m1, 55)
+      .addItemInput(<mythologytweaks:circuit_3>)
+      .addItemInput(<mythologytweaks:circuit_5>)
+      .addItemInput(<actuallyadditions:item_crystal_empowered:4>)
+      .addItemOutput(<mythologytweaks:circuit_4>)
+      . addEnergyPerTickInput(4235)
+      .build();
+
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "CONT", m1, 155)
+      .addItemInput(<thermalfoundation:storage_alloy:7>*4)
+      .addItemInput(<mythologytweaks:black_steel_ingot>*32)
+      .addItemInput(<mythologytweaks:circuit_1>*2)
+      .addItemInput(<mythologytweaks:circuit_3>*2)
+      .addItemInput(<mythologytweaks:circuit_2>*2)
+      .addItemInput(<mythologytweaks:circuit_4>*2)
+      .addItemOutput(<appliedenergistics2:controller>)
+      . addEnergyPerTickInput(7235)
+      .build();
+
+
+//AE21
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "AECGGE", m1, 155)
+      .addItemInput(<mythologytweaks:black_steel_ingot>*16)
+      .addItemInput(<mythologytweaks:circuit_6>*4)
+      .addItemInput(<mythologytweaks:circuit_5>*4)
+      .addItemOutput(<appliedenergistics2:drive>)
+      . addEnergyPerTickInput(7435)
+      .build();
+
+//AE21D
+mods.modularmachinery.RecipeBuilder.newBuilder("m1" + "DD", m1, 60)
+      .addItemInput(<appliedenergistics2:sky_stone_block>*64)
+      .addItemInput(<enderio:item_alloy_ingot:6>*8)
+      .addItemOutput(<mythologytweaks:black_steel_ingot>)
+      . addEnergyPerTickInput(7435)
       .build();
