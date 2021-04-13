@@ -13,6 +13,7 @@ val SLOW = <potion:minecraft:slowness >.makePotionEffect(500, 1);
 val FI = <mythologytweaks:fire_and_ice_sword>.withTag({ench: [{lvl: 10 as short, id: 20 as short}, {lvl: 10 as short, id: 17 as short}, {lvl: 7 as short, id: 21 as short}], HideFlags: 3, display: {Lore: ["§7Damage: §a+56", "§7Luck: §a+30", "§7Looting: §a+7", "§7Smite: §a+10", "§7Fire Aspcet: §a+10", "", "§6Ability: A dance of Fire and Ice", "§7While holding this sword, ", "§7you will be granted fire resistance and attack increase 2,", "§7but your movement speed will be slowed.", "", "§6§lLEGENDARY SWORD"], Name: "§c§lFire §6§land§b §lIce §6§lSword"}, AttributeModifiers: [{UUIDMost: -8383801085472456453 as long, UUIDLeast: -5771746426835177647 as long, Amount: 30.0, Slot: "mainhand", AttributeName: "generic.luck", Operation: 0, Name: "generic.luck"}]});
 val Zombi = <entity:minecraft:zombie>;
 val EnderChi = <entity:mightyenderchicken:ent_enderchicken>;
+val WitherSke = <entity:minecraft:wither_skeleton>;
 RecipeBuilder.get("engineer")
   .setShaped([
     [<aether_legacy:enchanted_gravitite>, <mythologytweaks:feinium_steel_ingot>, <mythologytweaks:feinium_steel_ingot>, <mythologytweaks:feinium_steel_ingot>, <aether_legacy:enchanted_gravitite>],
@@ -82,6 +83,7 @@ mods.SetEffect.register(FireIce_Set);
 
 Zombi.addPlayerOnlyDrop(<mythologytweaks:sythe_blade> % 0.058,1,1);
 EnderChi.addPlayerOnlyDrop(<mythologytweaks:golden_feather> % 1.2,1,1);
+WitherSke.addPlayerOnlyDrop(<minecraft:dye:1>.withTag({ench: [{lvl: 1 as short, id: 34 as short}], HideFlags: 1, display: {Lore: ["§7Has a §c0.62% §7chance of", "§7dropping from Wither Skeleton.", "", "§l§5§lEPIC ITEM"], Name: "§l§5§lWither Rose"}}) % 0.65,1,1);
 
 
 RecipeBuilder.get("engineer")
@@ -113,3 +115,27 @@ RecipeBuilder.get("engineer")
 ]);
 
 
+mods.extendedcrafting.TableCrafting.addShaped(4, <mythologytweaks:loseofthe_king>.withTag({ench: [{lvl: 10 as short, id: 20 as short}], HideFlags: 3, display: {Lore: ["§7Damage: §a+47", "§7Fire Aspect: §a+10", "§7Reach Distance : §c-50%", "§8§7KncokBack Resistance: §c-50%", "", "§6§lLEGENDARY SWORD"], Name: "§6§lLose of the King"}, AttributeModifiers: [{UUIDMost: 4547077585789603037 as long, UUIDLeast: -4748890196280400298 as long, Amount: -0.5, Slot: "mainhand", AttributeName: "generic.knockbackResistance", Operation: 1, Name: "generic.knockbackResistance"}, {UUIDMost: 4873945652358827790 as long, UUIDLeast: -7330879731303862813 as long, Amount: -0.5, Slot: "mainhand", AttributeName: "generic.reachDistance", Operation: 1, Name: "generic.reachDistance"}, {UUIDMost: 1850686269860432278 as long, UUIDLeast: -7919756198926455470 as long, Amount: 47.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]}), [
+	[null, null, null, null, null, null, null, null, null], 
+	[null, null, null, null, null, null, <ore:blockBlaze>, <mythologytweaks:infinity_star>, null], 
+	[null, null, null, null, null, <ore:itemBlazePowder>, <mysticalagriculture:chunk:17>, <ore:blockBlaze>, null], 
+	[null, null, null, null, <ore:itemBlazePowder>, <mysticalagriculture:chunk:17>, <ore:itemBlazePowder>, null, null], 
+	[null, null, null, <ore:itemBlazePowder>, <mysticalagriculture:chunk:17>, <ore:itemBlazePowder>, null, null, null], 
+	[<mythologytweaks:black_steel_plate>, <mythologytweaks:black_steel_plate>, <ore:itemBlazePowder>, <mysticalagriculture:chunk:17>, <ore:itemBlazePowder>, null, null, null, null], 
+	[null, <thaumicwands:item_wand_rod:2>, <deepmoblearning:pristine_matter_blaze>, <ore:itemBlazePowder>, null, null, null, null, null], 
+	[null, <thaumicwands:item_wand_rod:2>, <thaumicwands:item_wand_rod:2>, <mythologytweaks:black_steel_plate>, null, null, null, null, null], 
+	[<ore:dye>, null, null, <mythologytweaks:black_steel_plate>, null, null, null, null, null]
+]);
+
+
+mods.extendedcrafting.TableCrafting.addShaped(4, <mythologytweaks:starlightsword>.withTag({HideFlags: 3, display: {Lore: ["§7Damage; §a+44", "§7Defence: §c-25%", "", "§6§lLEGENDARY SWORD"], Name: "§6§lStar Light Sword"}, AttributeModifiers: [{UUIDMost: 2090243640770120016 as long, UUIDLeast: -8301201025190046921 as long, Amount: -0.25, Slot: "mainhand", AttributeName: "generic.armor", Operation: 1, Name: "generic.armor"}, {UUIDMost: 217216530502730152 as long, UUIDLeast: -5897392654243513532 as long, Amount: -0.25, Slot: "mainhand", AttributeName: "generic.armorToughness", Operation: 1, Name: "generic.armorToughness"}]}), [
+	[null, null, null, null, null, null, null, null, null], 
+	[null, null, null, null, null, null, <mythologytweaks:dense_star_stell_plate>, <mythologytweaks:dense_star_stell_plate>, null], 
+	[null, null, null, null, null, <astralsorcery:itemshiftingstar>, <mythologytweaks:star_steel_plate>, <mythologytweaks:dense_star_stell_plate>, null], 
+	[null, null, null, null, <mythologytweaks:star_steel_ingot>, <mythologytweaks:star_steel_plate>, <astralsorcery:itemshiftingstar>, null, null], 
+	[null, null, null, <mythologytweaks:star_steel_ingot>, <astralsorcery:itemshiftingstar>, <mythologytweaks:star_steel_ingot>, null, null, null], 
+	[null, null, <astralsorcery:itemshiftingstar>, <mythologytweaks:star_steel_plate>, <mythologytweaks:star_steel_ingot>, null, null, null, null], 
+	[null, <ore:ingotAstralStarmetal>, <mythologytweaks:star_steel_plate>, <astralsorcery:itemshiftingstar>, null, null, null, null, null], 
+	[<mythologytweaks:gaia_fragment>, <astralsorcery:itemchargedcrystalsword>, <ore:ingotAstralStarmetal>, null, null, null, null, null, null], 
+	[<mythologytweaks:ultimate_diamond>, <mythologytweaks:gaia_fragment>, null, null, null, null, null, null, null]
+]);

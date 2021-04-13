@@ -67,3 +67,11 @@ mods.botania.RuneAltar.addRecipe(<mythologytweaks:sun_essence>,[<advanced_solar_
 mods.botania.RuneAltar.addRecipe(<mythologytweaks:moon_essence>,[<extrautils2:ingredients:5>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>,<mysticalagradditions:insanium>], 50000);
 
 mods.botania.RuneAltar.addRecipe(<mythologytweaks:temperio_essence>,[<mysticalagradditions:insanium>,<mysticalagradditions:insanium>,<mythologytweaks:moon_essence>,<mythologytweaks:moon_essence>,<mythologytweaks:sun_essence>,<mythologytweaks:sun_essence>], 50000);
+
+mods.botania.ManaInfusion.addAlchemy(<aether_legacy:zanite_gemstone>, <botania:manaresource:2>, 5000);
+
+mods.botania.ManaInfusion.addAlchemy(<aether_legacy:holystone>, <botania:livingrock>, 5000);
+
+mods.botania.ManaInfusion.addAlchemy(<aether_legacy:ambrosium_shard>, <embers:shard_ember>, 5000);
+
+mods.botania.ElvenTrade.addRecipe([<aether_legacy:gravitite_ore>], [<minecraft:iron_ore>,<botania:storage:4>]);
