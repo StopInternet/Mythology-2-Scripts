@@ -14,6 +14,9 @@ val FI = <mythologytweaks:fire_and_ice_sword>.withTag({ench: [{lvl: 10 as short,
 val Zombi = <entity:minecraft:zombie>;
 val EnderChi = <entity:mightyenderchicken:ent_enderchicken>;
 val WitherSke = <entity:minecraft:wither_skeleton>;
+val phoenix = <entity:ebwizardry:phoenix>;
+
+//recipe
 RecipeBuilder.get("engineer")
   .setShaped([
     [<aether_legacy:enchanted_gravitite>, <mythologytweaks:feinium_steel_ingot>, <mythologytweaks:feinium_steel_ingot>, <mythologytweaks:feinium_steel_ingot>, <aether_legacy:enchanted_gravitite>],
@@ -84,7 +87,7 @@ mods.SetEffect.register(FireIce_Set);
 Zombi.addPlayerOnlyDrop(<mythologytweaks:sythe_blade> % 0.058,1,1);
 EnderChi.addPlayerOnlyDrop(<mythologytweaks:golden_feather> % 1.2,1,1);
 WitherSke.addPlayerOnlyDrop(<minecraft:dye:1>.withTag({ench: [{lvl: 1 as short, id: 34 as short}], HideFlags: 1, display: {Lore: ["§7Has a §c0.62% §7chance of", "§7dropping from Wither Skeleton.", "", "§l§5§lEPIC ITEM"], Name: "§l§5§lWither Rose"}}) % 0.65,1,1);
-
+phoneix.addPlayerOnlyDrop(<mythologytweaks:phoenix_sword>.withTag({HideFlags: 2, display: {Lore: ["§7Damage: §a+2", "", "§7Has a §c0.57% §7chance of dropping from Phoenix.", "", "§5§lEPIC SWORD"], Name: "§5§lBroken Phoenix Sword"}, AttributeModifiers: [{UUIDMost: -1753831406392881492 as long, UUIDLeast: -6709695600784110610 as long, Amount: 2.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]}) % 0.57,1,1);
 
 RecipeBuilder.get("engineer")
   .setShaped([
@@ -124,7 +127,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <mythologytweaks:loseofthe_king
 	[<mythologytweaks:black_steel_plate>, <mythologytweaks:black_steel_plate>, <ore:itemBlazePowder>, <mysticalagriculture:chunk:17>, <ore:itemBlazePowder>, null, null, null, null], 
 	[null, <thaumicwands:item_wand_rod:2>, <deepmoblearning:pristine_matter_blaze>, <ore:itemBlazePowder>, null, null, null, null, null], 
 	[null, <thaumicwands:item_wand_rod:2>, <thaumicwands:item_wand_rod:2>, <mythologytweaks:black_steel_plate>, null, null, null, null, null], 
-	[<ore:dye>, null, null, <mythologytweaks:black_steel_plate>, null, null, null, null, null]
+	[<minecraft:dye:1>.withTag({ench: [{lvl: 1 as short, id: 34 as short}], HideFlags: 1, display: {Lore: ["§7Has a §c0.62% §7chance of", "§7dropping from Wither Skeleton.", "", "§l§5§lEPIC ITEM"], Name: "§l§5§lWither Rose"}}), null, null, <mythologytweaks:black_steel_plate>, null, null, null, null, null]
 ]);
 
 
@@ -139,3 +142,25 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <mythologytweaks:starlightsword
 	[<mythologytweaks:gaia_fragment>, <astralsorcery:itemchargedcrystalsword>, <ore:ingotAstralStarmetal>, null, null, null, null, null, null], 
 	[<mythologytweaks:ultimate_diamond>, <mythologytweaks:gaia_fragment>, null, null, null, null, null, null, null]
 ]);
+
+mods.extendedcrafting.TableCrafting.addShaped(4, <mythologytweaks:phoenix_sword>.withTag({ench: [{lvl: 30 as short, id: 20 as short}, {lvl: 11 as short, id: 21 as short}], HideFlags: 3, display: {Lore: ["§7Damage: §a+50", "§7Speed: §a+20%", "§7Health: §c-75%", "§7Fire Aspect: §a+30", "§7Looting: §a+11", "", "§6§lLEGENDARY SWORD"], Name: "§6§lPhoenix Sword"}, AttributeModifiers: [{UUIDMost: 3996279201135674021 as long, UUIDLeast: -5707026201047538594 as long, Amount: 50.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}, {UUIDMost: 3048177734895813259 as long, UUIDLeast: -6420128318156682336 as long, Amount: 0.2, Slot: "mainhand", AttributeName: "generic.movementSpeed", Operation: 1, Name: "generic.movementSpeed"}, {UUIDMost: 515479167361372096 as long, UUIDLeast: -4876919997643253793 as long, Amount: -0.75, Slot: "mainhand", AttributeName: "generic.maxHealth", Operation: 1, Name: "generic.maxHealth"}]}), [
+	[null, null, null, null, null, null, null, null, null], 
+	[null, null, null, null, null, <ore:powderBlaze>, <ore:powderBlaze>, <mythologytweaks:infinity_star>, null], 
+	[null, null, null, null, <mythologytweaks:star_steel_plate>, <ore:ingotFiery>, <thaumicwands:item_wand_rod:2>, <ore:powderBlaze>, null], 
+	[null, null, null, <mythologytweaks:star_steel_plate>, <ore:ingotFiery>, <mythologytweaks:gelid_enderium_dust>, <ore:ingotFiery>, <ore:powderBlaze>, null], 
+	[null, null, <mythologytweaks:star_steel_plate>, <ore:ingotFiery>, <mythologytweaks:gelid_enderium_dust>, <ore:ingotFiery>, <mythologytweaks:star_steel_plate>, null, null], 
+	[null, <mythologytweaks:star_steel_plate>, <ore:ingotFiery>, <mythologytweaks:gelid_enderium_dust>, <ore:ingotFiery>, <mythologytweaks:star_steel_plate>, null, null, null], 
+	[<ore:blockBlaze>, <ore:blockBlaze>, <mythologytweaks:gelid_enderium_dust>, <ore:ingotFiery>, <mythologytweaks:star_steel_plate>, null, null, null, null], 
+	[null, <deepmoblearning:pristine_matter_blaze>, <ore:blockBlaze>, <mythologytweaks:star_steel_plate>, null, null, null, null, null], 
+	[<mythologytweaks:phoenix_sword>.withTag({HideFlags: 2, display: {Lore: ["§7Damage: §a+2", "", "§7Has a §c0.57% §7chance of dropping from Phoenix.", "", "§5§lEPIC SWORD"], Name: "§5§lBroken Phoenix Sword"}, AttributeModifiers: [{UUIDMost: -1753831406392881492 as long, UUIDLeast: -6709695600784110610 as long, Amount: 2.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]}), null, <ore:blockBlaze>, null, null, null, null, null, null]
+]);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, null, null, <mythologytweaks:dragon_horn>, null],
+    [null, null, <mythologytweaks:glacite_gem>, <mythologytweaks:gelid_enderium_dust>, <mythologytweaks:dragon_horn>],
+    [null, <mythologytweaks:elemental_axe>.withTag({HideFlags: 3, display: {Lore: ["§7Damage:§a +37", "§7Reach: §a+2", "", "§5§lEPIC SWORD"], Name: "§5§lAxe of the Stream"}, AttributeModifiers: [{UUIDMost: 3607874627987718150 as long, UUIDLeast: -6308953661216040154 as long, Amount: 37.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}, {UUIDMost: -1826679621562904684 as long, UUIDLeast: -7937255688784525439 as long, Amount: -3.0, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "generic.attackSpeed"}, {UUIDMost: 6836019420250589026 as long, UUIDLeast: -7384668619290531069 as long, Amount: 2.0, Slot: "mainhand", AttributeName: "generic.reachDistance", Operation: 0, Name: "generic.reachDistance"}]}), <draconicevolution:awakened_core>, <mythologytweaks:glacite_gem>, null],
+    [<mythologytweaks:star_steel_plate>, <botania:terrasword>.withTag({Unbreakable: 1 as byte, HideFlags: 6, display: {Lore: ["§7Damage: §a+27", "§7Reach: §a+2", "§d§lMYSTERY SWORD"], Name: "§d§lBlaster Terra Blade"}, AttributeModifiers: [{UUIDMost: -8958369572413027575 as long, UUIDLeast: -6105317213797507191 as long, Amount: 27.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}, {UUIDMost: -7833996248302927692 as long, UUIDLeast: -7037377841796534569 as long, Amount: 2.0, Slot: "mainhand", AttributeName: "generic.reachDistance", Operation: 0, Name: "generic.reachDistance"}]}), <mythologytweaks:midaswand>.withTag({HideFlags: 3, display: {Lore: ["§7Damage:§a +70", "", "§6§lLEGENDARY SWORD"], Name: "§6§lMidas Wand"}, AttributeModifiers: [{UUIDMost: -8556133008585700400 as long, UUIDLeast: -4710456615796068485 as long, Amount: 70.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]}), null, null],
+    [<mythologytweaks:loseofthe_king>.withTag({ench: [{lvl: 10 as short, id: 20 as short}], HideFlags: 3, display: {Lore: ["§7Damage: §a+47", "§7Fire Aspect: §a+10", "§7Reach Distance : §c-50%", "§8§7KncokBack Resistance: §c-50%", "", "§6§lLEGENDARY SWORD"], Name: "§6§lLose of the King"}, AttributeModifiers: [{UUIDMost: 4547077585789603037 as long, UUIDLeast: -4748890196280400298 as long, Amount: -0.5, Slot: "mainhand", AttributeName: "generic.knockbackResistance", Operation: 1, Name: "generic.knockbackResistance"}, {UUIDMost: 4873945652358827790 as long, UUIDLeast: -7330879731303862813 as long, Amount: -0.5, Slot: "mainhand", AttributeName: "generic.reachDistance", Operation: 1, Name: "generic.reachDistance"}, {UUIDMost: 1850686269860432278 as long, UUIDLeast: -7919756198926455470 as long, Amount: 47.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}]}), <mythologytweaks:star_steel_plate>, null, null, null]])
+  .addOutput(<mythologytweaks:epeolatry_sword>.withTag({ench: [{lvl: 12 as short, id: 21 as short}, {lvl: 30 as short, id: 20 as short}], HideFlags: 3, display: {Lore: ["§7Damage: §a+47§d (+126%)", "§7Reach Distance: §c-50% §d(+4)", "§7KnockBack Resistance: §c-50%", "§7Looting: §a+12", "§7Fire Aspect: §a+30", "", "§8A sword made by compressing four types of swords. ", "§8Its power is immense.", "", "§d§lMYSTERY SWORD"], Name: "§d§lEpeolatry Sword"}, AttributeModifiers: [{UUIDMost: -4427269311207684636 as long, UUIDLeast: -5831233598654457190 as long, Amount: 4.0, Slot: "mainhand", AttributeName: "generic.reachDistance", Operation: 0, Name: "generic.reachDistance"}, {UUIDMost: -6892562412047218647 as long, UUIDLeast: -6585948578635214522 as long, Amount: 47.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "generic.attackDamage"}, {UUIDMost: 3245893976460512049 as long, UUIDLeast: -8527624291756852480 as long, Amount: 1.26, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 1, Name: "generic.attackDamage"}, {UUIDMost: -8877756984237536148 as long, UUIDLeast: -5194979752793185238 as long, Amount: -0.5, Slot: "mainhand", AttributeName: "generic.reachDistance", Operation: 1, Name: "generic.reachDistance"}, {UUIDMost: 4280097253346853546 as long, UUIDLeast: -6777472427393304687 as long, Amount: -0.5, Slot: "mainhand", AttributeName: "generic.knockbackResistance", Operation: 1, Name: "generic.knockbackResistance"}]}))
+  .create();
